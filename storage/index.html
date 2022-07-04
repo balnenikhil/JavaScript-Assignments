@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Assignment</title>
+    <style>
+        .container{
+            height: 40rem;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            background-color: gray;
+            margin-top: 8rem;
+            margin-left: 6rem;
+            align-items: center;
+           justify-content: space-around;
+        }
+        .storage {
+    background-color: #f1f1f1;
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 75px;
+    font-size: 30px;
+    flex-direction: column;
+    border-radius: 10%;
+    }
+    .storage .btn{
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 6rem;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+    }
+    </style>
+</head>
+<body onload="values()">
+<div class="container">
+    <div class="storage">
+        <h3>local storage</h3>
+        <h1 id="local"></h1>
+        <button class="btn" onclick="incrementLocal()">increment</button>
+        <button class="btn" onclick="decrementLocal()">decrement</button>
+    </div>
+    <div class="storage">
+        <h3>session storage</h3>
+        <h1 id="session"></h1>
+        <button class="btn" onclick="incrementSession()">increment</button>
+        <button class="btn" onclick="decrementSession()">decrement</button>
+    </div>
+</div>
+<script src="storage.js"></script>
+</body>
+</html>
